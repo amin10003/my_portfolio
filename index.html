@@ -7,32 +7,47 @@
   <title>Mohamed Ibrahim - Home</title>
   <link rel="stylesheet" href="css/style.css" />
   <script defer src="js/script.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Sofia&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <header>
-    <nav>
-     
-     <div class="nav-links">
-      <nav>
-         <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="blog.html">Blog</a>
-        <a href="roadmap.html">Roadmap</a>
-        <a href="contact.html">Contact</a>
-         <div class="logo">MIY</div>
-      </nav>
-     </div>
-       
-     
-    </nav>
+  <header>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">MIY</div>
+      <div class="nav-links">
+        <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+        <a href="about.html"><i class="fas fa-user"></i> About</a>
+        <a href="blog.html"><i class="fas fa-blog"></i> Blog</a>
+        <a href="projects.html"><i class="fas fa-code"></i> Projects</a>
+        <a href="roadmap.html"><i class="fas fa-map"></i> Roadmap</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+      </div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+  </nav>
+</header>
   </header>
 
   <main>
     <section class="hero">
-      <img src="images/profile.jpg" alt="Mohamed Ibrahim Profile Picture" class="profile-img" />
-      <h1>Welcome to My Portfolio</h1>
-      <p>Web Developer | Tech Enthusiast | Lifelong Learner</p>
+      <div class="hero-content">
+        <img src="images/profile.jpg" alt="Mohamed Ibrahim Profile Picture" class="profile-img" />
+        <div class="hero-text">
+          <h1>Mohamed Ibrahim</h1>
+          <p class="typing-text">Web Developer | Tech Enthusiast | Lifelong Learner</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="skills">
@@ -41,12 +56,12 @@
         <div class="card complete"><h3>HTML</h3><p>Status: Complete</p></div>
         <div class="card complete"><h3>CSS</h3><p>Status: Complete</p></div>
         <div class="card progress"><h3>JavaScript</h3><p>Status: In Progress</p></div>
-        <div class="card bending"><h3>React</h3><p>Status: Pending</p></div>
-        <div class="card bending"><h3>TypeScript</h3><p>Status: Pending</p></div>
+        <div class="card pending"><h3>React</h3><p>Status: Pending</p></div>
+        <div class="card pending"><h3>TypeScript</h3><p>Status: Pending</p></div>
         <div class="card progress"><h3>Bootstrap</h3><p>Status: In Progress</p></div>
         <div class="card progress"><h3>SQL with MySQL</h3><p>Status: In Progress</p></div>
         <div class="card complete"><h3>Git and GitHub</h3><p>Status: Complete</p></div>
-        <div class="card bending"><h3>Jest</h3><p>Status: Pending</p></div>
+        <div class="card pending"><h3>Jest</h3><p>Status: Pending</p></div>
         <div class="card complete"><h3>Linux</h3><p>Status: Complete</p></div>
         <div class="card progress"><h3>Tailwind</h3><p>Status: In Progress</p></div>
         <div class="card progress"><h3>APIs</h3><p>Status: In Progress</p></div>
@@ -66,8 +81,13 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Mohamed Ibrahim. All rights reserved.</p>
+    <div class="footer-content">
+      <p>&copy; <span id="copyright-year"></span> Mohamed Ibrahim. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
   </footer>
-  <script defer src="js/script.js"></script>
 </body>
 </html>
